@@ -1,0 +1,64 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.h2{
+	color: green;
+    text-align: center;
+    margin-top: 50px;
+}
+.card_parent{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.card_wrapper{
+	position: relative;
+    height: 230px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+.theCard{
+	position:absolute;
+	height:100%;
+	width:100%;
+	transform-style: preserve-3d;
+    transition: ease-in-out 300ms;
+
+}
+/* .theCard:hover{
+	transform: rotateY(180deg);
+}
+.theCard:nth-child(even):hover {
+	transform: rotateY(-180deg);
+} */
+	
+.backCard{
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-repeat: no-repeat;
+    backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+.Card{
+	background-image: url("../images/green_back.png");
+	background-repeat:no-repeat;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    color: black;
+    backface-visibility: hidden;
+}
+.back_text{
+	color:#4da6ff;
+	font-size:20px;
+	font-weight:bold;
+}
+
